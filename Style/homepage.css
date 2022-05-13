@@ -6,6 +6,7 @@
     height: auto;
 }
 .featured{
-    width: 100%;
+    left: 5%;
+    width: 90%;
     height: 500px;
 }

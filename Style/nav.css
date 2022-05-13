@@ -36,7 +36,7 @@
     position: absolute;
     gap: 62px;
     top: 10px;
-    left: 10vw;
+    left: 15vw;
 }
 
 #navButton {
@@ -60,12 +60,13 @@
 
 .searchbar {
     position: absolute;
-    top: 40px;
+    top: 45px;
     right: 4vw;
 }
 
 #searchbar {
+    border-radius: 4px;
     border: none;
     width: 200px;
-    height: 25px;
+    height: 25px
 }
