@@ -16,7 +16,6 @@
 }
 
 .cards {
-    position: relative;
     display: flex;
     gap: 75px;
     justify-content: center;
@@ -26,17 +25,17 @@
 .card {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-items: ;
     gap: 10px;
     width: 316px;
     height: 409px;
-    object-fit: contain;
+    object-fit: fill;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .productImage {
-    width: auto;
+   
+    width:auto;
     height: 281px;
 }
 
@@ -46,14 +45,11 @@
     letter-spacing: 2px;
 }
 
-.categories {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    left: 1.5vw;
+.category{
+    display: inline-flex;
     gap: 10px;
     font-family: 'Roboto', sans-serif;
-    bottom: 6vh;
+    
 }
 #category{
     width: auto;
