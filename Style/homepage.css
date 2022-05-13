@@ -1,6 +1,6 @@
 .Home_page{
     position: absolute;
-    border: 2px solid black;
+    border-bottom: 1px solid black;
     left: 5%;
     width: 90%;
     height: auto;
@@ -9,4 +9,27 @@
     left: 5%;
     width: 90%;
     height: 500px;
+    object-fit: contain;
+}
+.cards{
+     position: relative;
+    display: flex;
+    gap: 75px;
+    justify-content: center;
+    top: 20px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    width: 316px;
+    height: 409px;
+    object-fit:cover;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.productImage{
+    
+    max-width: auto;
+    max-height: 281px; 
+
 }
