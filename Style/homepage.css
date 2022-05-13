@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 .Home_page{
     position: absolute;
     border-bottom: 1px solid black;
@@ -19,23 +20,23 @@
     top: 20px;
 }
 .card{ 
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    gap: 10px;
+    
     width: 316px;
     height: 409px;
     object-fit:cover;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.imageContainer{
-    display: flex;
-    justify-content: center;
-    width: 316px;
-    height: 409px;
-}
 .productImage{   
-    max-width: auto;
-    max-height: 281px; 
+    width: auto;
+    height: 281px; 
 }
-.detail{
-    position: relative;
-    z-index: 1;
+.productTitle{
+  font-family: 'Roboto', sans-serif; 
+  font-size: small;
+  letter-spacing: 2px;
 }
