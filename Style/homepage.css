@@ -15,6 +15,7 @@
     height: 27em;
     object-fit: contain;
     overflow: hidden;
+    border-bottom: 1px solid black;
 }
 
 .cards{
