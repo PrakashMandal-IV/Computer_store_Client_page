@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 .Home_page {
-    position: absolute;
-    border-bottom: 1px solid black;
     left: 5%;
     width: 90%;
     height: auto;
 }
 
-.featured {
+.section{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
     left: 5%;
     width: 90%;
-    height: 500px;
+    height: 27em;
     object-fit: contain;
+    overflow: hidden;
 }
 
 .cards{
@@ -20,7 +22,7 @@
     display: flex;
     gap: 75px;
     justify-content: center;
-    top: 20px;
+    align-content: center;
     object-fit: contain;
 }
 
@@ -29,8 +31,7 @@
     flex-direction: column;
     gap: 10px;
     width: 316px;
-    height: 409px;
-    margin-left: 3px;
+    height: 25em; 
     object-fit: fill;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -44,6 +45,7 @@
 .productTitle {
     font-family: 'Roboto', sans-serif;
     font-size: small;
+    padding-left: 3px;
     letter-spacing: 2px;
     margin-left: 3px;
 }
@@ -53,6 +55,7 @@
     gap: 10px;
     font-family: 'Roboto', sans-serif;
     font-size: smaller;
+    padding-left: 3px;   
 }
 #category{
     width: auto;
@@ -62,11 +65,12 @@
 .buy{
     display: flex;
     gap: 3px;
-   
+    padding-left: 3px;
 }
 .buybtn, .addcart{
     width: 90px;
     height: 30px;
+    padding-left: 3px;
     border: none;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
@@ -80,8 +84,7 @@
     height: 22px;
 }
 .price{
-    right: 0;
-    margin-left: 120px;
+   padding-left: 6em;
 }
 .mainPrice{
     color: rgb(186, 0, 0);
