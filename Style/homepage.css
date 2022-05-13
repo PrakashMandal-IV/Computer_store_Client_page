@@ -18,18 +18,24 @@
     justify-content: center;
     top: 20px;
 }
-.card{
-    display: flex;
-    justify-content: center;
+.card{ 
     width: 316px;
     height: 409px;
     object-fit:cover;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.productImage{
-    
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    width: 316px;
+    height: 409px;
+}
+.productImage{   
     max-width: auto;
     max-height: 281px; 
-
+}
+.detail{
+    position: relative;
+    z-index: 1;
 }
