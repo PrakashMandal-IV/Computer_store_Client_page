@@ -9,8 +9,6 @@ fetch(url,{
 }).then(function (response){
     return response.json();
 }).then(function (text){
-    
-       console.log(text)
        featurecard(text)      
 })
 
@@ -18,10 +16,15 @@ function featurecard(data){
     var cards = document.getElementById('cards')
     for (var i = 0;i<4;i++)
     {
+        description = data[i].description
+        newdes = description.replace(/^(.{100}[^\s]*).*/, "$1")
+        console.log(newdes)
         var card = ` <div class="card">
+        <img src="images/favorite.png"
+                alt="image" class="fav">
             <img src="${data[i].imageUrl}"
                 alt="image" class="productImage" id="ProdImage">
-            <p class="productTitle" id="producttitle">${data[i].name}</p>
+            <p class="productTitle" id="producttitle">${newdes}</p>
             <div class="category">
                 <p id="category">Laptop</p>
                 <p id="category">Laptop</p>
