@@ -33,7 +33,7 @@
     flex-direction: column;
     gap: 10px;
     width: 316px;
-    height: 27em; 
+    height: auto; 
     object-fit: fill;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -42,10 +42,13 @@
     position: absolute;
     width: 3em;
 }
+.fav:hover{
+    color: brown;
+}
 .productImage {
-   
     width:auto;
     height: 281px;
+    
 }
 
 .productTitle {
@@ -78,9 +81,19 @@
     height: 30px;
     padding-left: 3px;
     border: none;
+    border-radius: 4px;
     font-family: 'Roboto', sans-serif;
+    transition: all ease-in 40ms;
     letter-spacing: 1px;
     background-color:rgb(218, 218, 218) ;
+}
+.buybtn:hover{
+    font-size: 1rem;
+
+}
+.cartImage:hover{
+    width:26px;
+    height: 26px;
 }
 .addcart{
     width: 30px;

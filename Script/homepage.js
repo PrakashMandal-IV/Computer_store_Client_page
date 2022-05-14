@@ -1,3 +1,6 @@
+function categoryView(){
+    console.log("categoyr clicked")
+}
 const url = 'https://localhost:7063/Product/get-all-product'
 fetch(url,{
     method: 'GET',
@@ -17,7 +20,7 @@ function featurecard(data){
     for (var i = 0;i<4;i++)
     {
         description = data[i].description
-        newdes = description.replace(/^(.{100}[^\s]*).*/, "$1")
+        newdes = description.replace(/^(.{80}[^\s]*).*/, "$1")
         console.log(newdes)
         var card = ` <div class="card">
         <img src="images/favorite.png"
@@ -40,4 +43,5 @@ function featurecard(data){
     console.log(data[i])
     cards.innerHTML +=card
     }
+   
 }
