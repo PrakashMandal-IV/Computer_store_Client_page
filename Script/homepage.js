@@ -36,7 +36,7 @@ function featurecard(data){
             </div>
             <div class="buy">
                 <button class="buybtn">Buy Now</button>
-                <button class="addcart"><img class="cartImage" src="images/cart.png" alt=""></button>
+                <button class="addcart"></button>
                 <div class="price">
                     <p class="mainPrice">₹ ${data[i].newPrice}</p>
                     <p class="ogPrice">₹ ${data[i].price}</p>
