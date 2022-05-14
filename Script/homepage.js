@@ -1,3 +1,7 @@
+window.addEventListener(scroll, function(e){
+    var scroll = this.scrollY;
+    console.log(scroll)
+});
 function categoryView(){
 }
 function account(){
@@ -23,7 +27,6 @@ function featurecard(data){
     {
         description = data[i].description
         newdes = description.replace(/^(.{80}[^\s]*).*/, "$1")
-        console.log(newdes)
         var card = ` <div class="card">
         <img src="images/favorite.png"
                 alt="image" class="fav">
@@ -42,7 +45,6 @@ function featurecard(data){
                     <p class="ogPrice">₹ ${data[i].price}</p>
                 </div>
             </div>`
-    console.log(data[i])
     cards.innerHTML +=card
     }
    
