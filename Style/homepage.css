@@ -17,6 +17,13 @@
     overflow: hidden;
     border-bottom: 1px solid black;
 }
+.two{
+    position: absolute;
+    margin-top: 35em;
+    width: 100%;
+    height: 10em;
+    
+}
 
 .cards{
     margin-top: 20px;
@@ -32,7 +39,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 316px;
+    width: 26vw;
     height: auto; 
     object-fit: fill;
     overflow: hidden;
@@ -53,7 +60,7 @@
 
 .productTitle {
     font-family: 'Roboto', sans-serif;
-    font-size: small;
+    font-size: 1.3vw;
     padding-left: 3px;
     letter-spacing: 2px;
     margin-left: 3px;
@@ -63,7 +70,7 @@
     display: inline-flex;
     gap: 10px;
     font-family: 'Roboto', sans-serif;
-    font-size: smaller;
+    font-size: 1vw;
     padding-left: 3px;   
 }
 #category{
@@ -83,6 +90,7 @@
     border: none;
     border-radius: 4px;
     font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
     transition: all ease-in 40ms;
     letter-spacing: 1px;
     background-color:rgb(218, 218, 218) ;
@@ -103,7 +111,8 @@
     height: 22px;
 }
 .price{
-   padding-left: 6em;
+   padding-left: 8vw;
+   font-size: 1vw;
 }
 .mainPrice{
     color: rgb(186, 0, 0);
@@ -122,3 +131,20 @@
     height: 10rem;
     background-color: rgb(194, 194, 194);
 } 
+@media screen and (max-width: 1650px ) {
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 70px;
+        align-items: center;
+    }
+    card{
+        width: 10vw;
+    }
+    .productImage{
+        width: auto;
+        height: 15vw;
+    }
+
+}

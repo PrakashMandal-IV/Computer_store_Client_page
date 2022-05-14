@@ -1,5 +1,7 @@
 function categoryView(){
-    console.log("categoyr clicked")
+}
+function account(){
+    window.location.reload="pages/login.html"
 }
 const url = 'https://localhost:7063/Product/get-all-product'
 fetch(url,{
@@ -36,7 +38,7 @@ function featurecard(data){
                 <button class="buybtn">Buy Now</button>
                 <button class="addcart"><img class="cartImage" src="images/cart.png" alt=""></button>
                 <div class="price">
-                    <p class="mainPrice">${data[i].newPrice}</p>
+                    <p class="mainPrice">₹ ${data[i].newPrice}</p>
                     <p class="ogPrice">₹ ${data[i].price}</p>
                 </div>
             </div>`
