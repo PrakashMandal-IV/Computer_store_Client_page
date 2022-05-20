@@ -15,7 +15,7 @@
     height: min-content;
     object-fit: contain;
     overflow: hidden;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(179, 179, 179);
 }
 .two{
     position: absolute;
@@ -133,9 +133,10 @@
 @media screen and (max-width: 1650px ) {
     .cards{
         display: grid;
+        justify-items: center;
+        align-items: center;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        column-gap: 70px;
         justify-content: center;
     }
     card{
@@ -149,6 +150,8 @@
 @media screen and (max-width: 790px ){
     .cards{
         display: grid;
+        justify-items: center;
+        align-items: center;
         grid-template-columns: repeat(1, 3fr);
         grid-template-rows: repeat(1, 3fr);
         column-gap: 70px;

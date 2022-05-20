@@ -16,7 +16,7 @@
     width: 100%;
     max-height: 136px;
     background-color: rgba(230, 230, 230,0.6);
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -36,7 +36,7 @@
     z-index: -1;
 }
 
-.address-bar {
+.address {
     display: flex;
     position: absolute;
     gap: 62px;
@@ -47,7 +47,7 @@
 #navButton {
     width: fit-content;
     height: 3vh;
-    font-size: 1rem ;
+    font-size:14pt ;
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
     letter-spacing: 0.5ex;

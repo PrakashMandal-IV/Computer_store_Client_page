@@ -1,13 +1,17 @@
-window.addEventListener(scroll, function(e){
-    var scroll = this.scrollY;
-    console.log(scroll)
-});
+var authToken = null
+
+//category
 function categoryView(){
 }
+//login/register
 function account(){
-    window.location.reload="pages/login.html"
+    if(authToken == null)
+    {
+    window.location = "/pages/login.html";
+    }
+    else{window.location = "my account"}
 }
-const url = 'https://localhost:7063/Product/get-all-product'
+const url = 'http://192.168.43.227:7063/Product/get-all-product'
 fetch(url,{
     method: 'GET',
     headers:{
@@ -18,7 +22,8 @@ fetch(url,{
 }).then(function (response){
     return response.json();
 }).then(function (text){
-       featurecard(text)      
+       featurecard(text) 
+       console.log("calling cards")     
 })
 
 function featurecard(data){
