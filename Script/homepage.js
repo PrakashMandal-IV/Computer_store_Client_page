@@ -58,7 +58,3 @@ function featurecard(data){
     }
   
 }
-function CategoryBtn()
-{
-    window.location.href = "/pages/Category.html"
-}
