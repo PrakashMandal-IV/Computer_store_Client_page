@@ -22,8 +22,7 @@ fetch(url,{
 }).then(function (response){
     return response.json();
 }).then(function (text){
-       featurecard(text) 
-       console.log("calling cards")     
+       featurecard(text)          
 })
 
 function featurecard(data){

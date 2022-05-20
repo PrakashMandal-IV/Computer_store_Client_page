@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Roboto:wght@300&display=swap');
 .CategoryPage{
     margin-top: 100pt;
+}
+.nav-bar{
+    position: relative;
+}
+.body{ 
+    margin-left: 10vw;
+    width: 80vw;
+    text-align: center;
+}
+.title{
+    padding-bottom: 20pt;
+    font-weight: 300;
+}
+.lable{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100pt 100pt 100pt 100pt 100pt;
+    gap: 20pt;
+}
+.categorylabel{
+    border: none;
+    border-radius: 10px;
+    height: 40pt;
+    background-color: rgba(175, 175, 175, 0.562);
+    font-size: 16pt;
 }
