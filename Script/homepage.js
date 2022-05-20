@@ -27,29 +27,29 @@ fetch(url,{
 })
 
 function featurecard(data){
-    var cards = document.getElementById('cards')
+    var cards = document.getElementById('featcard')
     for (var i = 0;i<4;i++)
     {
         description = data[i].description
         newdes = description.replace(/^(.{80}[^\s]*).*/, "$1")
-        var card = ` <div class="card">
-        <img src="images/favorite.png"
-                alt="image" class="fav">
-            <img src="${data[i].imageUrl}"
-                alt="image" class="productImage" id="ProdImage">
-            <p class="productTitle" id="producttitle">${newdes}</p>
-            <div class="category">
-                <p id="category">Laptop</p>
-                <p id="category">Laptop</p>
+        var card = `
+            <div class="card">
+            <button class="favbtn"> <img class="favimg" src="Images/favorite.png" alt="laptop"></button>
+            <img class="productimage" src="${data[i].imageUrl}" alt="laptop"> 
+            <p class="productTitle">${newdes}</p>
+            <div class="categorylabel">
+                <h8 class="cat">laptop</h8>
+                <h8 class="cat">Gaming</h8>
             </div>
-            <div class="buy">
-                <button class="buybtn">Buy Now</button>
-                <button class="addcart"></button>
+            <div class="cardfoot">
+                <button class="btn buy">Buy Now</button>
+                <button class="btn cart"><img class="cartImg" src="Images/cart.png" alt=""></button>
                 <div class="price">
-                    <p class="mainPrice">₹ ${data[i].newPrice}</p>
-                    <p class="ogPrice">₹ ${data[i].price}</p>
+                    <p class="newPrice">₹ ${data[i].newPrice}</p>
+                    <p class="oldPrice">₹ ${data[i].price}</p>
                 </div>
-            </div>`
+            </div>
+        </div> `
     cards.innerHTML +=card
     }
    

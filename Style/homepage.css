@@ -1,12 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-.body{
-    border: 1px solid black;
+
+.body {
     display: flex;
     flex-direction: column;
     height: auto;
     margin-left: 80pt;
     margin-right: 80pt;
 }
-.featuredCard{
+
+.featuredCard {
     display: flex;
+    gap: 30pt;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 5pt;
+    width: 180pt;
+    background-color: rgb(235, 235, 235);
+}
+
+.productimage {
+    width: auto;
+    height: 150pt;
+}
+
+.favbtn {
+    position: absolute;
+    border: none;
+    background: none;
+    width: 20pt;
+}
+.favimg {
+    width: 20pt;
+}
+
+.productTitle {
+    font-size: 10pt;
+    margin-left: 5pt;
+}
+
+.categorylabel {
+    margin-top: auto;
+}
+
+.cat {
+    margin-left: 5pt;
+    background-color: rgb(212, 212, 212);
+    font-size: 10pt
+}
+
+.cardfoot {
+    display: flex;
+    gap: 5pt;
+    margin-left: 5pt;
+    padding-bottom: 5pt;
+}
+
+.btn {
+    border: none;
+    background-color: rgb(201, 201, 201);
+    margin-top: auto;
+}
+
+.buy {
+    width: 50pt;
+    height: 20pt;
+    font-size: 10pt;
+}
+
+.cart {
+    width: 20pt;
+    height: 20pt;
+}
+
+.cartImg {
+    width: 15pt;
+}
+
+.price {
+    margin-left: auto;
+    margin-right: 5pt;
+    font-size: 10pt;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+    color: rgb(82, 82, 82);
+}
+
+.newPrice {
+    color: rgb(145, 1, 1);
 }
