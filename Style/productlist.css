@@ -2,21 +2,77 @@
     width: 100%;
     height: 50pt;
 }
+.category{
+    align-self: center;
+    text-align: center;
+    padding-bottom: 20pt;
+}
 .listProduct{
     display: flex;
     flex-direction: column;
     margin-left: 10vw;
     width: 80vw;
-    text-align: center;
-    border: 1px solid black;
+    border: 1px solid rgb(218, 218, 218);
+    box-shadow: 2px 2px 4px #7c7c7c;
 }
 .product{
     margin: 10pt;
-    border: 1px solid black;
+   
     display: flex;
     gap: 5pt;
 }
 
 .productimg{
     height: 180pt;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    gap: 10pt;
+    width: 100%;
+}
+.title{
+    font-size: 20pt;
+    font-weight: 300;
+}
+.infotwo{
+    display: flex;
+    margin-top: auto;
+}
+.newPrice{
+    font-size: 16pt;
+    color: brown;
+}
+.mrp{
+    display: flex;
+    flex-direction: row;
+    gap: 10pt;
+}
+.oldPrice{
+    text-decoration: line-through;
+}
+.fav{
+    border: none;
+    height: 20pt;
+    width: 150pt;
+}
+.rightSection{
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: 10pt;
+    margin-right: 10pt;
+}
+.btn{
+    border: none;
+    height: 30pt;
+    width: 100pt;
+}
+.buy,.fav{
+    background-color: rgb(255, 161, 53);
+}
+.buy:hover{
+    background-color: rgb(252, 143, 18);
+}
+.title:hover, .description:hover{
+    color: rgb(252, 143, 18 );
 }
