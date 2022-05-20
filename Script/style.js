@@ -1,6 +1,5 @@
 window.addEventListener("scroll", function(e){
     var scroll = this.scrollY;
-    console.log(scroll)
     if(scroll>781)
     {
         document.getElementById("navbar").style.backgroundColor = "rgb(230, 230, 230)"
