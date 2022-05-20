@@ -11,7 +11,7 @@
 
 .HomepageCards{
     display: flex;
-    gap: 30pt;
+    gap: 50pt;
     justify-content: center;
     padding-bottom: 10pt;
     border-bottom: 1px solid rgb(209, 209, 209);
@@ -24,6 +24,7 @@
     gap: 5pt;
     width: 220pt;
     background-color: rgb(235, 235, 235);
+    box-shadow: 2px 2px 4px #7c7c7c;
 }
 
 .productimage {
@@ -104,6 +105,7 @@
     display: flex;
     justify-content: center;
     gap: 5vw;
+    padding-bottom: 10pt;
     margin-bottom: 20pt;
     border-bottom: 1px solid rgb(209, 209, 209);
 }

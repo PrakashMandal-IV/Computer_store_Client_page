@@ -29,5 +29,5 @@ function getcategory(data){
 function getProduct(id){
    Categorid = document.getElementById(id).value
    localStorage.setItem('CategoryId',Categorid)
-   console.log(localStorage.getItem('CategoryId'))
+   window.location.href = "/pages/ProductList.html"
 }

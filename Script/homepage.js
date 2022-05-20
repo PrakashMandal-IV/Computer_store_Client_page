@@ -11,7 +11,7 @@ function account(){
     }
     else{window.location = "my account"}
 }
-const url = 'http://192.168.43.227:7063/Product/get-all-product'
+const url = 'http://192.168.43.227:7063/Category/get-product-by-category/3'
 fetch(url,{
     method: 'GET',
     headers:{
@@ -24,30 +24,33 @@ fetch(url,{
 }).then(function (text){
        featurecard(text)          
 })
-
+//<h8 class="cat">laptop</h8>
+//<h8 class="cat">Gaming</h8>
 function featurecard(data){
     var cards = document.getElementById('featcard')
     var gamingcards = document.getElementById('gaminglaptop')
     var accessories = document.getElementById('Accessories')
     var newarrivals = document.getElementById('NewArrivals')
-    for (var i = 0;i<4;i++)
+    var product  = data.product
+    for (var i in product)
     {
-        description = data[i].description
-        newdes = description.replace(/^(.{80}[^\s]*).*/, "$1")
+        
+        
+        newdes = product[i].description.replace(/^(.{80}[^\s]*).*/, "$1")
         var card = `
             <div class="card">
-            <img class="productimage" src="${data[i].imageUrl}" alt="laptop"> 
+            <img class="productimage" src="${product[i].imageUrl}" alt="laptop"> 
             <p class="productTitle">${newdes}</p>
             <div class="categorylabel">
-                <h8 class="cat">laptop</h8>
-                <h8 class="cat">Gaming</h8>
+            <h8 class="cat">${product[i].category[0].name}</h8>
+            <h8 class="cat">${product[i].category[1].name}</h8>
             </div>
             <div class="cardfoot">
                 <button class="btn buy">Buy Now</button>
                 <button class="btn cart"><img class="cartImg" src="Images/cart.png" alt=""></button>
                 <div class="price">
-                    <p class="newPrice">₹ ${data[i].newPrice}</p>
-                    <p class="oldPrice">₹ ${data[i].price}</p>
+                    <p class="newPrice">₹ ${product[i].newPrice}</p>
+                    <p class="oldPrice">₹ ${product[i].price}</p>
                 </div>
             </div>
         </div> `
@@ -57,8 +60,4 @@ function featurecard(data){
     newarrivals.innerHTML +=card
     }
   
-}
-function CategoryBtn()
-{
-    window.location.href = "/pages/Category.html"
 }
