@@ -5,21 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="/Style/nav.css">
     <link rel="stylesheet" href="/Style/login.css">
 </head>
 <body>
-    <div class="container">
-        
-        <form class="login" id="loginform" action="" method="post">
-            <h3 id="title">User Login</h3>
-            <label id="email_l">Email</label>
-            <input class="textbox" type="email" placeholder="Enter your email" id="email" required>
-            <label class="password_l">Password</label>
-            <input class="textbox" type="password" placeholder="Enter your password" id="password" required>
-            <button class="submit" type="submit">Login</button>
-            <p>Don't have an account? <a href="Register" class="register">Create Account</a></p>
-        </form>
+    <nav class="navContainer" id="nav">
+        <div class="nav-bar" id="navbar">
+        </div>
+    </nav>
+    <div class="spacer"></div>
+        <div class="container loginpanel" id="logpanel">
     
-    </div>
+            <form class="login" id="loginform" action="" method="post">
+                <h3 id="title">User Login</h3>
+                <label id="username_1">Email</label>
+                <input class="textbox" type="email" placeholder="Enter your Email" id="email" required>
+                <label class="password_l">Password</label>
+                <input class="textbox" type="password" placeholder="Enter your password" id="password" required>
+                <button class="submit" type="submit">Login</button>
+                <p>Don't have an account? <button onclick="OpenReg()" type="button" class="regbtn">Create Account</button>
+                </p>
+            </form>
+        </div>
+        <div class="container regpanel" id="regpanel">
+            <form class="login" id="registrationform" action="" method="post">
+                <h3 id="title">User Register</h3>
+                <label id="username_1">Username</label>
+                <input class="textbox" type="text" placeholder="Enter your UserName" id="regusername" required>
+                <label id="username_1">First Name</label>
+                <input class="textbox" type="text" placeholder="Enter your First Name" id="regfirstname" required>
+                <label id="username_1">LastName</label>
+                <input class="textbox" type="text" placeholder="Enter your Last Name" id="reglastname" required>
+                <label class="password_l">Password</label>
+                <input class="textbox" type="password" placeholder="Enter your password" id="regpassword" required>
+                <button class="submit" type="submit">Register</button>
+                <p>Already have an account? <button onclick="OpenLogin()" type="button" class="logbtn">Login</a></p>
+            </form>
+        </div>
 </body>
+<script src="/Script/nav.js"></script>
+<script src="/Script/Login.js"></script>
 </html>
