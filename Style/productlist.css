@@ -1,0 +1,22 @@
+.spacer{
+    width: 100%;
+    height: 50pt;
+}
+.listProduct{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+    width: 80vw;
+    text-align: center;
+    border: 1px solid black;
+}
+.product{
+    margin: 10pt;
+    border: 1px solid black;
+    display: flex;
+    gap: 5pt;
+}
+
+.productimg{
+    height: 180pt;
+}
