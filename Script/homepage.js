@@ -36,7 +36,6 @@ function featurecard(data){
         newdes = description.replace(/^(.{80}[^\s]*).*/, "$1")
         var card = `
             <div class="card">
-            <button class="favbtn"> <img class="favimg" src="Images/favorite.png" alt="laptop"></button>
             <img class="productimage" src="${data[i].imageUrl}" alt="laptop"> 
             <p class="productTitle">${newdes}</p>
             <div class="categorylabel">

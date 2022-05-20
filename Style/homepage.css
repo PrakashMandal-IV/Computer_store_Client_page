@@ -31,17 +31,6 @@
     height: 180pt;
    
 }
-
-.favbtn {
-    position: absolute;
-    border: none;
-    background: none;
-    width: 20pt;
-}
-.favimg {
-    width: 20pt;
-}
-
 .productTitle {
     font-size: 10pt;
     margin-left: 5pt;
