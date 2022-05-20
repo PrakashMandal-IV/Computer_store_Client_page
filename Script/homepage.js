@@ -58,5 +58,9 @@ function featurecard(data){
     accessories.innerHTML +=card
     newarrivals.innerHTML +=card
     }
-   
+  
+}
+function CategoryBtn()
+{
+    window.location.href = "/pages/Category.html"
 }
