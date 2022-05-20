@@ -12,12 +12,13 @@
     flex-direction: column;
     margin-left: 10vw;
     width: 80vw;
-    border: 1px solid rgb(218, 218, 218);
-    box-shadow: 2px 2px 4px #7c7c7c;
+    
+    
 }
 .product{
     margin: 10pt;
-   
+    border: 1px solid rgb(218, 218, 218);
+    box-shadow: 2px 2px 4px #7c7c7c;
     display: flex;
     gap: 5pt;
 }
