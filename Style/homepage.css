@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-.body {
+.HomePage {
     display: flex;
     flex-direction: column;
     gap: 15pt;
@@ -15,6 +15,7 @@
     justify-content: center;
     padding-bottom: 10pt;
     border-bottom: 1px solid rgb(209, 209, 209);
+   
 }
 
 .card {
@@ -136,4 +137,12 @@
 .catheading{
     background-color: rgba(219, 219, 219,0.8);
     font-size: larger;
+}
+
+
+@media screen and (max-width:800px) {
+    .HomePage{
+        margin:0;
+         overflow-x: scroll;
+    }
 }

@@ -1,11 +1,12 @@
 window.addEventListener("scroll", function(e){
     var scroll = this.scrollY;
-    if(scroll>456)
+    console.log(scroll)
+    if(scroll>781)
     {
-        document.getElementById("nav").style.backgroundColor = "rgb(230, 230, 230)"
+        document.getElementById("navbar").style.backgroundColor = "rgb(230, 230, 230)"
     }
     else if(scroll<456)
     {
-        document.getElementById("nav").style.backgroundColor = "rgba(230, 230, 230,0.6)"
+        document.getElementById("navbar").style.backgroundColor = "rgba(230, 230, 230,0.6)"
     }
 });
