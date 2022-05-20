@@ -40,6 +40,9 @@ function GetProduct(data){
             </div>
             <div class="infotwo">
                 <div class="leftSection">
+                <h8 class="cat">${product[i].category[0].name}</h8>
+                <h8 class="cat">${product[i].category[1].name}</h8> 
+                </br>
                     <button type="button" class="fav">Add To Wishlist +</button>
                     <div class="price">
                         <p class="newPrice">Price: ₹ ${product[i].newPrice}</p>

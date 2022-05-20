@@ -40,6 +40,10 @@
     display: flex;
     margin-top: auto;
 }
+.cat {
+    background-color: rgb(212, 212, 212);
+    font-size: 10pt
+}
 .newPrice{
     font-size: 16pt;
     color: brown;
