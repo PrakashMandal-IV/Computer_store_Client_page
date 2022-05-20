@@ -1,8 +1,52 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Roboto:wght@100&display=swap');
+
+* {
     font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
 }
-.navContaner{
-display: flex;
-width: 100%;
-height: auto;
+
+.navContaner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.nav-bar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    gap: 20pt;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.logo {
+    width: 60pt;
+    height: auto;
+}
+
+.navbtn {
+    border: none;
+    background: none;
+    font-size: 14pt;
+    font-family: 'Roboto', sans-serif;
+    ;
+    font-weight: lighter;
+}
+
+.homebtn {
+    margin-left: 40pt;
+}
+
+.cartbtn {
+    margin-left: auto;
+}
+
+.accountbtn {
+    margin-right: 20pt;
+}
+.navBanner {  
+    width: 100%;
+    height: auto; 
 }
