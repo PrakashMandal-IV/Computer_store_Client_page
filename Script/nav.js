@@ -6,7 +6,7 @@ var nav = `
 <button class="navbtn buildpcbtn">Build PC</button>
 <button class="navbtn ordersbtn">Orders</button>
 <button class="navbtn cartbtn">Your Cart</button>
-<button class="navbtn accountbtn">Account</button> 
+<button class="navbtn accountbtn" onclick="AccountBtn()">Account</button> 
 `
 navbar.innerHTML +=nav
 
@@ -17,4 +17,7 @@ function HomeBtn()
 function CategoryBtn()
 {
     window.location.href = "/pages/Category.html"
+}
+function AccountBtn(){
+    window.location.href = "/pages/Account.html"
 }
