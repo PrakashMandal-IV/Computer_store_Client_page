@@ -22,8 +22,7 @@ fetch(url,{
 }).then(function (response){
     return response.json();
 }).then(function (text){
-       featurecard(text) 
-       console.log("calling cards")     
+       featurecard(text)          
 })
 
 function featurecard(data){
@@ -37,7 +36,6 @@ function featurecard(data){
         newdes = description.replace(/^(.{80}[^\s]*).*/, "$1")
         var card = `
             <div class="card">
-            <button class="favbtn"> <img class="favimg" src="Images/favorite.png" alt="laptop"></button>
             <img class="productimage" src="${data[i].imageUrl}" alt="laptop"> 
             <p class="productTitle">${newdes}</p>
             <div class="categorylabel">
@@ -58,5 +56,9 @@ function featurecard(data){
     accessories.innerHTML +=card
     newarrivals.innerHTML +=card
     }
-   
+  
+}
+function CategoryBtn()
+{
+    window.location.href = "/pages/Category.html"
 }
