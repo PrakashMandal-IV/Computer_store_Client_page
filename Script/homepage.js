@@ -28,6 +28,9 @@ fetch(url,{
 
 function featurecard(data){
     var cards = document.getElementById('featcard')
+    var gamingcards = document.getElementById('gaminglaptop')
+    var accessories = document.getElementById('Accessories')
+    var newarrivals = document.getElementById('NewArrivals')
     for (var i = 0;i<4;i++)
     {
         description = data[i].description
@@ -51,6 +54,9 @@ function featurecard(data){
             </div>
         </div> `
     cards.innerHTML +=card
+    gamingcards.innerHTML +=card
+    accessories.innerHTML +=card
+    newarrivals.innerHTML +=card
     }
    
 }

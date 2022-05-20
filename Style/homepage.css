@@ -3,27 +3,31 @@
 .body {
     display: flex;
     flex-direction: column;
+    gap: 15pt;
     height: auto;
     margin-left: 80pt;
     margin-right: 80pt;
 }
 
-.featuredCard {
+.HomepageCards{
     display: flex;
     gap: 30pt;
+    justify-content: center;
+    padding-bottom: 10pt;
+    border-bottom: 1px solid rgb(209, 209, 209);
 }
 
 .card {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;   
     gap: 5pt;
-    width: 180pt;
+    width: 220pt;
     background-color: rgb(235, 235, 235);
 }
 
 .productimage {
     width: auto;
-    height: 150pt;
+    height: 180pt;
 }
 
 .favbtn {
@@ -60,6 +64,7 @@
 
 .btn {
     border: none;
+    border-radius: 5px;
     background-color: rgb(201, 201, 201);
     margin-top: auto;
 }
@@ -92,4 +97,43 @@
 
 .newPrice {
     color: rgb(145, 1, 1);
+}
+
+.SecondBanner{
+    padding-bottom: 15pt;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+.SecondBannerImage{
+    width: 100%;
+    height: 200pt;
+}
+
+/* Categoriess */
+.browseCat{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    margin-bottom: 20pt;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+.browsecatCard{
+    width: 250pt;
+    height: 270pt;
+}
+.catCard1{
+    background-image: url(/Images/Cat-img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.catheading{
+    background-color: rgba(219, 219, 219,0.8);
+    font-size: larger;
 }
