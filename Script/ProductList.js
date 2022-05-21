@@ -1,5 +1,6 @@
 id = localStorage.getItem('CategoryId')
-productlistUrl = 'http://192.168.43.227:7063/Category/get-product-by-category/'+id
+domain = localStorage.getItem('domain')
+productlistUrl = 'http://'+domain+'/Category/get-product-by-category/'+id
 
 fetch(productlistUrl,{
     method: 'GET',

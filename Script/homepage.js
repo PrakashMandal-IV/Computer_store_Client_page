@@ -1,5 +1,6 @@
 var authToken = null
-
+localStorage.setItem('domain','localhost:7063')
+domain = localStorage.getItem('domain')
 //category
 function categoryView(){
 }
@@ -11,7 +12,7 @@ function account(){
     }
     else{window.location = "my account"}
 }
-const url = 'https://localhost:5001/Category/get-product-by-category/3'
+const url = 'http://'+domain+'/Category/get-product-by-category/3'
 fetch(url,{
     method: 'GET',
     headers:{

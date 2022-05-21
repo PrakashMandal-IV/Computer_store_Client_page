@@ -1,5 +1,6 @@
 productId = localStorage.getItem('productId')
-getproductUrl = 'http://192.168.43.227:7063/Product/get-product-by-id/'+productId
+domain = localStorage.getItem('domain')
+getproductUrl = 'http://'+domain+'/Product/get-product-by-id/'+productId
 console.log(productId)
 
 fetch(getproductUrl,{

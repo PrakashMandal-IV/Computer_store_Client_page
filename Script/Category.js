@@ -1,4 +1,6 @@
-categoryUrl = 'http://192.168.43.227:7063/Category/get-all-category'
+domain = localStorage.getItem('domain')
+
+categoryUrl = 'http://'+domain+'/Category/get-all-category'
 
 
 fetch(categoryUrl,{

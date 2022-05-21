@@ -1,5 +1,6 @@
 token = document.cookie.replace("name=","")
-validationUrl = 'http://192.168.43.227:7063/api/Login/check-validation'
+domain = localStorage.getItem('domain')
+validationUrl = 'http://'+domain+'/api/Login/check-validation'
 if(document.cookie == "")
 {
     window.location.href = "/pages/login.html"

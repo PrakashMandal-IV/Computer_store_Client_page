@@ -1,5 +1,7 @@
-const LoginUrl = 'http://192.168.43.227:7063/api/Login/user-login'
-const registerUrl = 'http://192.168.43.227:7063/api/Login/register-user'
+domain = localStorage.getItem('domain')
+
+const LoginUrl = 'http://'+domain+'/api/Login/user-login'
+const registerUrl = 'http://'+domain+'/api/Login/register-user'
 const loginform = document.getElementById('loginform')
 console.log(document.cookie)
 loginform.addEventListener('submit', function (e) {
