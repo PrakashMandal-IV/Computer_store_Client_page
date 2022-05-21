@@ -11,7 +11,7 @@ function account(){
     }
     else{window.location = "my account"}
 }
-const url = 'http://192.168.43.227:7063/Category/get-product-by-category/3'
+const url = 'https://localhost:5001/Category/get-product-by-category/3'
 fetch(url,{
     method: 'GET',
     headers:{
