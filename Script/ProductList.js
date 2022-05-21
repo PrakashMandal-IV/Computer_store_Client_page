@@ -21,6 +21,7 @@ function GetProduct(data){
     var product  = data.product
     for(var i in product)
     {
+        console.log(product[i].id)
         percent = 100-(Math.round((product[i].newPrice  / product[i].price)*100))
         if(product[i].newPrice >1000)
         {
@@ -71,6 +72,7 @@ function GetProduct(data){
 function getProduct(id)
 {
    ProductId = document.getElementById(id).value
-   window.localStorage('productId',ProductId)
+   
+   localStorage.setItem('productId',ProductId)
    window.location.href = '/pages/Product.html'
 }

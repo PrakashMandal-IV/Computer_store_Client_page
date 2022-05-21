@@ -1,5 +1,6 @@
-getproductUrl = 'http://192.168.43.227:7063/Product/get-product-by-id/5'
-
+productId = localStorage.getItem('productId')
+getproductUrl = 'http://192.168.43.227:7063/Product/get-product-by-id/'+productId
+console.log(productId)
 
 fetch(getproductUrl,{
     method: 'GET',
@@ -12,6 +13,7 @@ fetch(getproductUrl,{
     return response.json()
 }).then(function (data){
      getProduct(data)
+     console.log(data)
 })
 
 
