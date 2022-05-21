@@ -21,7 +21,8 @@ function GetProduct(data){
     var product  = data.product
     for(var i in product)
     {
-        percent = 100-(Math.round((product[i].price  / product[i].newPrice)*100))
+        console.log(product[i].id)
+        percent = 100-(Math.round((product[i].newPrice  / product[i].price)*100))
         if(product[i].newPrice >1000)
         {
             shipping = '<p class="shipping">Free shipping available</p>'
@@ -31,8 +32,8 @@ function GetProduct(data){
         }  
         var listview = `
         <div class="product">
-        <img src="${product[i].imageUrl}" alt="image"
-            class="productimg">
+     <button type="button" class="productclick" onclick="getProduct(this.id)" id="btn${i}" value="${product[i].id}">   <img src="${product[i].imageUrl}" alt="image"
+            class="productimg"> </button>
         <div class="detail">
             <div class="info">
                 <label class="title">${product[i].name}</label></br>
@@ -66,4 +67,12 @@ function GetProduct(data){
         viewproduct.innerHTML += listview
     }
   
+}
+
+function getProduct(id)
+{
+   ProductId = document.getElementById(id).value
+   
+   localStorage.setItem('productId',ProductId)
+   window.location.href = '/pages/Product.html'
 }
