@@ -40,7 +40,7 @@ function featurecard(data){
         newdes = product[i].description.replace(/^(.{80}[^\s]*).*/, "$1")
         var card = `
             <div class="card">
-            <img class="productimage" src="${product[i].imageUrl}" alt="laptop"> 
+            <button type="button" class="productclick" onclick="getProduct(this.id)" id="btn${i}" value="${product[i].id}">  <img class="productimage" src="${product[i].imageUrl}" alt="laptop"></button> 
             <p class="productTitle">${newdes}</p>
             <div class="categorylabel">
             <h8 class="cat">${product[i].category[0].name}</h8>
