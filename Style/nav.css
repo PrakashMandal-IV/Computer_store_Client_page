@@ -67,8 +67,16 @@
 .searchbtn{
     width: 30pt;
     border: none;
+    background-color: rgb(216, 216, 216);
+    transition: all ease-in;
 }
 .searchimg{
     width: 20pt;
+}
+.searchbtn:hover{
+    background-color: rgb(226, 226, 226) ;
+}
+.searchimg:hover{
+    width: 22pt;
 }
 
