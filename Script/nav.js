@@ -7,7 +7,7 @@ var nav = `
 <button class="navbtn ordersbtn">Orders</button>
 <div class="searching">
     <input type="search" name="search" id="searchbar" class="search" placeholder="Search..">
-    <button class="searchbtn"><img class="searchimg" src="/Images/search.png" alt=""></button>
+    <button class="searchbtn" onclick="searchtag()"><img class="searchimg" src="/Images/search.png" alt=""></button>
 </div>
 <button class="navbtn cartbtn">Your Cart</button>
 <button class="navbtn accountbtn" onclick="AccountBtn()">Account</button>
@@ -24,4 +24,13 @@ function CategoryBtn()
 }
 function AccountBtn(){
     window.location.href = "/pages/Account.html"
+}
+
+function searchtag()
+{
+    searchstring = document.getElementById('searchbar').value
+    if(searchstring != "")
+    {
+        window.open("/pages/SearchedProducts.html?watch="+searchstring)
+    }
 }
