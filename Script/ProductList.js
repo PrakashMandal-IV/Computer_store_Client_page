@@ -72,8 +72,7 @@ function GetProduct(data){
 
 function getProduct(id)
 {
-   ProductId = document.getElementById(id).value
+    ProductId = document.getElementById(id).value
    
-   localStorage.setItem('productId',ProductId)
-   window.location.href = '/pages/Product.html'
+   window.location.href = '/pages/Product.html?product='+ProductId
 }
