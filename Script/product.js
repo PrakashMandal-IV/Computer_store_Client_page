@@ -15,7 +15,6 @@ fetch(getproductUrl,{
     return response.json()
 }).then(function (data){
      getProduct(data)
-     console.log(data)
 })
 
 

@@ -13,7 +13,6 @@ fetch(getProductUrl,{
     return response.json()
 }).then(function (data){
    GetProduct(data)
-   console.log(data)
 })
 
 
