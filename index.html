@@ -9,77 +9,81 @@
     <link rel="stylesheet" href="Style/nav.css">
     <link rel="stylesheet" href="Style/homepage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    
+
 </head>
 
 <body>
-    
-<nav class="navContainer" id="nav">
-    <div class="nav-bar" id="navbar">
-        <img src="/Images/logo.png" alt="" class="logo">
-<button class="navbtn homebtn" onclick="HomeBtn()">Home</button>
-<button class="navbtn categorybtn" onclick="CategoryBtn()">Category</button>
-<button class="navbtn buildpcbtn">Build PC</button>
-<button class="navbtn ordersbtn">Orders</button>
-<button class="navbtn cartbtn">Your Cart</button>
-<button class="navbtn accountbtn" onclick="AccountBtn()">Account</button> 
-    </div>
-    <div class="FirstBanner">
-        <img class="navBanner" src="Images/pcbuild.jpg" alt="banner">
-    </div>
-</nav>
-<div class="HomePage">
-    <!--Featerd cards -->
-    <h3>Featured</h3>
-    <div class="HomepageCards" id="featcard">       
-    </div>
-   <!--Banner -->
-    <div class="SecondBanner">
-        <img src="Images/Mobile _banner.jpg" alt="" class="SecondBannerImage">
-    </div>
-    <!--Category cards -->
-    <div class="browseCat">
-        <div class="browsecatCard catCard1">
-            <div class="heading">
-            <h5 class="catheading">Latest</br>Laptop</br> Releases</h5>
+
+    <nav class="navContainer" id="nav">
+        <div class="nav-bar" id="navbar">
+            <img src="/Images/logo.png" alt="" class="logo">
+            <button class="navbtn homebtn" onclick="HomeBtn()">Home</button>
+            <button class="navbtn categorybtn" onclick="CategoryBtn()">Category</button>
+            <button class="navbtn buildpcbtn">Build PC</button>
+            <button class="navbtn ordersbtn">Orders</button>
+            <div class="searching">
+                <input type="search" name="search" id="searchbar" class="search" placeholder="Search..">
+            </div>
+            <button class="navbtn cartbtn">Your Cart</button>
+            <button class="navbtn accountbtn" onclick="AccountBtn()">Account</button>
+        </div>
+        <div class="FirstBanner">
+            <img class="navBanner" src="Images/pcbuild.jpg" alt="banner">
+        </div>
+    </nav>
+    <div class="HomePage">
+        <!--Featerd cards -->
+        <h3>Featured</h3>
+        <div class="HomepageCards" id="featcard">
+        </div>
+        <!--Banner -->
+        <div class="SecondBanner">
+            <img src="Images/Mobile _banner.jpg" alt="" class="SecondBannerImage">
+        </div>
+        <!--Category cards -->
+        <div class="browseCat">
+            <div class="browsecatCard catCard1">
+                <div class="heading">
+                    <h5 class="catheading">Latest</br>Laptop</br> Releases</h5>
+                </div>
+            </div>
+            <div class="browsecatCard catCard1">
+                <div class="heading">
+                    <h5 class="catheading">Latest</br>GPU</br> Releases</h5>
+                </div>
+            </div>
+            <div class="browsecatCard catCard1">
+                <div class="heading">
+                    <h5 class="catheading">Checkout</br>Ryzon Series</br> Proessors</h5>
+                </div>
             </div>
         </div>
-        <div class="browsecatCard catCard1">
-            <div class="heading">
-                <h5 class="catheading">Latest</br>GPU</br> Releases</h5>
-                </div>
+        <!--Gaming Series Laptop -->
+        <h3>Gaming Series</h3>
+        <div class="HomepageCards" id="gaminglaptop">
+
         </div>
-        <div class="browsecatCard catCard1">
-            <div class="heading">
-                <h5 class="catheading">Checkout</br>Ryzon Series</br> Proessors</h5>
-                </div>
+        <!--Gaming Series Laptop -->
+        <h3>Accessories</h3>
+        <div class="HomepageCards" id="Accessories">
+
         </div>
-    </div>
-    <!--Gaming Series Laptop -->
-    <h3>Gaming Series</h3>
-    <div class="HomepageCards" id="gaminglaptop">
+        <!--Gaming Series Laptop -->
+        <h3>New Arrivals</h3>
+        <div class="HomepageCards" id="NewArrivals">
+
+        </div>
 
     </div>
-<!--Gaming Series Laptop -->
-    <h3>Accessories</h3>
-    <div class="HomepageCards" id="Accessories">
-        
-    </div>
-<!--Gaming Series Laptop -->
-    <h3>New Arrivals</h3>
-    <div class="HomepageCards" id="NewArrivals">
-        
-    </div>
-    
-</div>
 
-<!--CATEGORY PAGE-->
-<div class="CategoryPage">
-    this is category page
-</div>
+    <!--CATEGORY PAGE-->
+    <div class="CategoryPage">
+        this is category page
+    </div>
 
 </body>
 
 <!--<script src="Script/nav.js"></script> -->
 <script src="Script/homepage.js"></script>
+
 </html>

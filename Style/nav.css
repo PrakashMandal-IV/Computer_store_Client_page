@@ -49,3 +49,9 @@
     width: 100%;
     height: auto; 
 }
+
+.search{
+    width: 20vw;
+    height: 30pt;
+    align-self: center;
+}
