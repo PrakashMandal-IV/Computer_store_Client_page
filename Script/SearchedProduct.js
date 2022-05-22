@@ -1,7 +1,7 @@
 const params = new URLSearchParams(window. location. search)
 tag = params.get('watch')
-
-getProductUrl = 'http://localhost:7063/Tag/search-product-by-tag/'+tag
+domain = localStorage.getItem('domain')
+getProductUrl = 'http://'+domain+'/Tag/search-product-by-tag/'+tag
 fetch(getProductUrl,{
     method: 'GET',
     headers: {
@@ -74,6 +74,5 @@ function getProduct(id)
 {
    ProductId = document.getElementById(id).value
    
-   localStorage.setItem('productId',ProductId)
-   window.location.href = '/pages/Product.html'
+   window.location.href = '/pages/Product.html?product='+ProductId
 }

@@ -1,7 +1,8 @@
-productId = localStorage.getItem('productId')
+const params = new URLSearchParams(window. location. search)
+productId = params.get('product')
 domain = localStorage.getItem('domain')
 getproductUrl = 'http://'+domain+'/Product/get-product-by-id/'+productId
-console.log(productId)
+
 
 fetch(getproductUrl,{
     method: 'GET',
