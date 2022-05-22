@@ -18,7 +18,7 @@
     display: flex;
     width: 100%;
     gap: 20pt;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(230, 230, 230);
 }
 
 .logo {
@@ -49,9 +49,20 @@
     width: 100%;
     height: auto; 
 }
+.searching{
+    display: flex;
+
+    align-self: center
+}
 
 .search{
+    border: none;
+    border-radius: 5px;
     width: 20vw;
     height: 30pt;
-    align-self: center;
 }
+.searchbtn{
+    width: 30pt;
+    border: none;
+}
+
