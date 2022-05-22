@@ -18,7 +18,7 @@
     display: flex;
     width: 100%;
     gap: 20pt;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(230, 230, 230);
 }
 
 .logo {
@@ -48,4 +48,37 @@
 .navBanner {  
     width: 100%;
     height: auto; 
+}
+.searching{
+    display: flex;
+
+    align-self: center
+}
+
+.search{
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 20vw;
+    height: 30pt;
+    font-size: 14pt;
+    padding: 10pt;
+}
+.searchbtn{
+    width: 30pt;
+    border: none;
+    background-color: rgb(216, 216, 216);
+    transition: all ease-in;
+}
+.searchimg{
+    width: 20pt;
+}
+.searchbtn:hover{
+    background-color: rgb(226, 226, 226) ;
+}
+.searchimg:hover{
+    width: 22pt;
+}
+.spacer{
+    height: 50pt;
 }
