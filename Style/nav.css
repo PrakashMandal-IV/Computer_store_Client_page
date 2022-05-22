@@ -57,12 +57,18 @@
 
 .search{
     border: none;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     width: 20vw;
     height: 30pt;
+    font-size: 14pt;
+    padding: 10pt;
 }
 .searchbtn{
     width: 30pt;
     border: none;
+}
+.searchimg{
+    width: 20pt;
 }
 
