@@ -12,6 +12,9 @@
     height: auto ;
     background-color: rgb(250, 250, 250);
 }
+.productclick{
+    border: none;
+}
 .ProductImage{
     padding: 10pt;
 }
