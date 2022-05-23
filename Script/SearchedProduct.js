@@ -12,7 +12,7 @@ fetch(getProductUrl,{
 }).then(function (response){
     return response.json()
 }).then(function (data){
-   GetProduct(data)
+   GetProduct(data) 
 })
 
 
