@@ -6,9 +6,10 @@ var nav = `
 <button class="navbtn buildpcbtn">Build PC</button>
 <button class="navbtn ordersbtn">Orders</button>
 <div class="searching">
-    <input type="search" name="search" id="searchbar" class="search" placeholder="Search..">
+    <input type="search" name="search"id="searchbar" class="search" placeholder="Search..">
+    </form>
     <button class="searchbtn" onclick="searchtag()"><img class="searchimg" src="/Images/search.png" alt=""></button>
-</div>
+    </div>
 <button class="navbtn cartbtn">Your Cart</button>
 <button class="navbtn accountbtn" onclick="AccountBtn()">Account</button>
 `
@@ -31,6 +32,6 @@ function searchtag()
     searchstring = document.getElementById('searchbar').value
     if(searchstring != "")
     {
-        window.open("/pages/SearchedProducts.html?watch="+searchstring)
+        window.location.href ="/pages/SearchedProducts.html?watch="+searchstring
     }
 }
