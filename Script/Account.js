@@ -1,6 +1,5 @@
 token = document.cookie.replace("name=","")
 domain = localStorage.getItem('domain')
-
 userDetailUrl = 'http://'+domain+'/Controller/get-user-detail'
 
 fetch(userDetailUrl,{
@@ -17,6 +16,7 @@ fetch(userDetailUrl,{
   GetUser(data)
 })
 
+// Get User
 function GetUser(data)
 {
    var detail = document.getElementById('detail')
@@ -26,7 +26,6 @@ function GetUser(data)
    `
    detail.innerHTML +=_detail
 }
-
 
 //log out
 function signout()

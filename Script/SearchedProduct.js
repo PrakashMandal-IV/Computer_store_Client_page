@@ -57,7 +57,7 @@ function GetProduct(data){
                     <p class="dicount">${percent}% Discount, Buy now</p> 
                      ${shipping}          
                     <button type="button" class="cart btn">Add To Cart</button>
-                    <button type="button" class="buy btn">Buy now</button>
+                    <button type="button" class="buy btn" onclick="buynow(this.id)" id="btn${i}" value="${product[i].id}">Buy now</button>
                 </div>
             </div>
         </div>
