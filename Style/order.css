@@ -1,0 +1,66 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30vw;
+}
+.Main{
+    margin-top: 50pt;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.order{
+    margin-top: 40pt;
+    display: flex;
+    
+}
+.productimg{
+    width: 200pt;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 10pt;
+}
+.title{
+    font-size: 16pt;
+}
+
+.qty{
+    width: 40pt;
+}
+.Address{
+    margin-top: 40pt;
+    width: 50vw;
+}
+.CheckAddress{
+    border: 1px solid black
+}
+.Payment{
+    display: flex;
+    flex-direction: column;
+    gap: 20pt;
+}
+.select{
+    display: flex;
+    justify-items: left;
+    align-items: flex-start;
+}
+
+.buyNow{
+    margin-top: 100pt;
+}
+.place{
+    width: 150pt;
+    height: 40pt;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(125, 207, 255);
+    font-size: 14;
+    font-weight: bold;
+}
+.place:hover{
+    background-color:rgb(113, 203, 255) ;
+}
