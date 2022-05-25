@@ -32,6 +32,6 @@ function searchtag()
     searchstring = document.getElementById('searchbar').value
     if(searchstring != "")
     {
-        window.location.href ="/pages/SearchedProducts.html?watch="+searchstring
+        window.location.href ="/pages/SearchedProducts.html?product="+searchstring
     }
 }
