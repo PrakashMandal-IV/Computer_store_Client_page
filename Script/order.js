@@ -37,8 +37,12 @@ function GetProduct(data)
     productTemplate.innerHTML +=fillProduct
     newPrice = data.newPrice
     price = data.price
+    FetchAddress()
 }
 
+
+
+// fetch address function
 function FetchAddress()
 {
 fetch(addressUrl,{
@@ -59,6 +63,7 @@ fetch(addressUrl,{
 function getAddress(data)
 {
     var addresshtml = document.getElementById('address')
+    addresshtml.innerHTML += ''
     add = data.addressList
     console.log(add)
     for(var i in add)
@@ -127,12 +132,13 @@ function AddAddress(){
     city= document.getElementById('city').value
     state= document.getElementById('state').value
     country= document.getElementById('country').value
-    landMark= document.getElementById('landmark').value
+    landMark= document.getElementById('landMark').value
     postalCode= document.getElementById('pincode').value
     phoneNumber= document.getElementById('phone').value
+    addressType =true
    if(document.getElementById('HomeAddress').checked)
    {
-       addresstype = true
+       addressType = true
    }
    else if(document.getElementById('OfficeAddress').checked)
    {
@@ -163,11 +169,17 @@ fetch(AddAddressUrl,{
     if(response.status == 200)
     {
         document.getElementById('AddressForm').style.display = 'none'
+        FetchAddress()
     }
 
 })
-
-
-
 //end address function
+}
+
+function CandleAddressForm()
+{
+    document.getElementById('AddressForm').style.display = 'none'
+}
+function openAddressForm(){
+    document.getElementById('AddressForm').style.display = 'block'
 }

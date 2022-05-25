@@ -32,9 +32,9 @@
 
                 </div>
                 <div class="btn">
-                    <button class="addAddress" type="button">New Address</button>
+                    <button class="addAddress" type="button" onclick="openAddressForm()">New Address</button>
                     <div class="addressform" id="AddressForm">
-                        <form action="" method="post">
+                        <div>
                             <div class="AddAddress">
                                 <input class="Addinput" type="text" name="Name" id="name" placeholder="Name.." required>
                             </div>
@@ -66,10 +66,10 @@
                                 <label class="AddressType" for="OFFICE">Office Address</label>
                             </div>
                             <div class="formbtn">
-                             <button class="submit" type="submit" onclick="AddAddress()">Save</button>
-                             <button class="cancle" type="reset">Cancle</button>
+                             <button class="submit" onclick="AddAddress()">Save</button>
+                             <button class="cancle" type="reset" onclick="CandleAddressForm()">Cancle</button>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
