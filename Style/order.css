@@ -1,12 +1,11 @@
 .container{
     display: flex;
     flex-direction: column;
-    margin-left: 30vw;
+    align-items: center;
 }
 .Main{
     margin-top: 50pt;
     display: flex;
-    flex-direction: column;
     width: 50vw;
     border-radius: 5px;
     border: 1px solid black;
@@ -20,6 +19,7 @@
     width: 200pt;
 }
 .info{
+    margin-left: 10pt;
     display: flex;
     flex-direction: column;
     gap: 10pt;
@@ -27,7 +27,9 @@
 .title{
     font-size: 16pt;
 }
-
+.detail{
+    font-size: 11pt;
+}
 .qty{
     width: 40pt;
 }
@@ -38,10 +40,19 @@
 .CheckAddress{
     border: 1px solid black
 }
-.Payment{
+.btn{
     display: flex;
-    flex-direction: column;
-    gap: 20pt;
+    margin-top: 10pt;
+}
+.addAddress{
+    margin-left: auto;
+    width: 100pt;
+    height: 20pt;
+    font-size: 11pt;
+}
+.Payment{
+    margin-top: 40pt;
+    width: 50vw;
 }
 .select{
     display: flex;
@@ -57,10 +68,24 @@
     height: 40pt;
     border: none;
     border-radius: 5px;
-    background-color: rgb(125, 207, 255);
-    font-size: 14;
+    background-color: rgb(252, 143, 18);
+    font-size: 14pt;
     font-weight: bold;
 }
 .place:hover{
-    background-color:rgb(113, 203, 255) ;
+    background-color:rgb(255, 156, 42);
 }
+.Price{
+    color: brown;
+    font-weight: bold;
+}
+.totalprice{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40pt;
+    width: 50vw;
+}
+.subtotal{
+    margin-left: auto;
+}
+
