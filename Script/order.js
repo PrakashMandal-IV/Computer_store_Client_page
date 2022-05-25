@@ -4,6 +4,8 @@ productId = params.get('product')
 domain = localStorage.getItem('domain')
 const getProductUrl = 'http://'+domain+'/Product/get-product-by-id/'+productId
 const addressUrl = 'http://'+domain+'/Controller/get-user-address'
+let newPrice = ''
+let price = ''
 fetch(getProductUrl,{
     method: 'GET',
     headers: {
@@ -32,6 +34,8 @@ function GetProduct(data)
                 </div>
     `
     productTemplate.innerHTML +=fillProduct
+    newPrice = data.newPrice
+    price = data.price
 }
 
 fetch(addressUrl,{
@@ -72,5 +76,41 @@ function getAddress(data)
         `
         addresshtml.innerHTML += addresscard
     }
+    getPricing()
+}
 
+
+function getPricing() {
+    var template = document.getElementById('price')
+    if(newPrice>=1000)
+    {
+        charges = 0
+    }
+    else charges = 40
+    var element = `
+    <div class="subtotal">
+                <div class="PriceLabel">
+                    <p class="label">Price: </p>
+                    <p class="tag newPrice">₹ ${newPrice}</p>
+                </div>
+                <div class="PriceLabel">
+                    <p class="label">M.R.P: </p>
+                    <p class="tag price">- ₹ ${price}</p>
+                </div>
+                <div class="PriceLabel">
+                    <P class="label">You Saved : </P>
+                    <p class="tag saveing">+ ${price - newPrice}</p>
+                </div>
+                <div class="PriceLabel">
+                    <p class="label">Delivery </br> Charges: </p>
+                    <p class="tag delivery">+ ${charges} </p>
+                </div>
+                <div class="PriceLabel">
+                    <p class="label">Total Amount: </p>
+                    <p class="tag total">₹ ${newPrice + charges}</p>
+                </div>
+                <p class="tax">Inclusive of all Taxes</p>
+            </div>
+    `
+    template.innerHTML += element
 }
