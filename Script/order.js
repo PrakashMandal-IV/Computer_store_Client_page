@@ -4,6 +4,7 @@ productId = params.get('product')
 domain = localStorage.getItem('domain')
 const getProductUrl = 'http://'+domain+'/Product/get-product-by-id/'+productId
 const addressUrl = 'http://'+domain+'/Controller/get-user-address'
+const AddAddressUrl = 'http://'+domain+'/Controller/add-user-address'
 let newPrice = ''
 let price = ''
 fetch(getProductUrl,{
@@ -38,6 +39,8 @@ function GetProduct(data)
     price = data.price
 }
 
+function FetchAddress()
+{
 fetch(addressUrl,{
     method: 'GET',
     headers: {
@@ -78,7 +81,7 @@ function getAddress(data)
     }
     getPricing()
 }
-
+}
 
 function getPricing() {
     var template = document.getElementById('price')
@@ -113,4 +116,58 @@ function getPricing() {
             </div>
     `
     template.innerHTML += element
+}
+
+
+
+//Add Address 
+function AddAddress(){
+    Addressname = document.getElementById('name').value
+    street= document.getElementById('street').value
+    city= document.getElementById('city').value
+    state= document.getElementById('state').value
+    country= document.getElementById('country').value
+    landMark= document.getElementById('landmark').value
+    postalCode= document.getElementById('pincode').value
+    phoneNumber= document.getElementById('phone').value
+   if(document.getElementById('HomeAddress').checked)
+   {
+       addresstype = true
+   }
+   else if(document.getElementById('OfficeAddress').checked)
+   {
+       addressType= false
+   }
+    AddressData = {
+    name: `${Addressname}`,
+    addressType: addressType,
+    street: `${street}`,
+    city: `${city}`,
+    state: `${state}`,
+    country: `${country}`,
+    landMark: `${landMark}`,
+    postalCode: `${postalCode}`,
+    phoneNumber:`${phoneNumber}`
+    }
+fetch(AddAddressUrl,{
+    method: 'POST',
+    headers: {
+        'Authorization': "bearer " + token,
+        "Access-Control-Allow-Headers": "*",
+        "Access-Control-Allow-Methods": 'OPTIONS,POST,GET',
+        'Content-Type': 'application/json; charset=UTF-8'
+    },
+    body: JSON.stringify(AddressData)
+}).then(function (response)
+{
+    if(response.status == 200)
+    {
+        document.getElementById('AddressForm').style.display = 'none'
+    }
+
+})
+
+
+
+//end address function
 }

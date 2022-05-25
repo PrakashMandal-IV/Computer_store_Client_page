@@ -13,8 +13,7 @@ loginform.addEventListener('submit', function (e) {
     logindata = {
         email: `${email}`,
         password: `${password}`
-    }
-    console.log(logindata)
+    }   
     fetch(LoginUrl, {
         method: 'POST',
         headers: {

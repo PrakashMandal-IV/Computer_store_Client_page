@@ -168,3 +168,6 @@
 .AddressType{
     font-size: 8pt;
 }
+#AddressForm{
+    display: block;
+}
