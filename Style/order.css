@@ -143,7 +143,6 @@
     flex-direction: column;
     
 }
-
 .Addinput{
     border: 1px solid blue;
     margin-bottom: 10pt;
@@ -153,6 +152,7 @@
 }
 
 .submit,.cancle{
+    margin-top: 10pt;
     width: 60pt;
     height: 20pt;
     border: none;
@@ -164,4 +164,7 @@
 }
 .cancle:hover{
     background-color: rgb(218, 109, 95);
+}
+.AddressType{
+    font-size: 8pt;
 }
