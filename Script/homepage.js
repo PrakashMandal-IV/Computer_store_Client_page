@@ -47,7 +47,7 @@ function featurecard(data){
             <h8 class="cat">${product[i].category[1].name}</h8>
             </div>
             <div class="cardfoot">
-                <button class="btn buy">Buy Now</button>
+                <button class="btn buy" onclick="buynow(this.id)" id="buy${i}" value="${product[i].id}">Buy Now</button>
                 <button class="btn cart"><img class="cartImg" src="Images/cart.png" alt=""></button>
                 <div class="price">
                     <p class="newPrice">₹ ${product[i].newPrice}</p>
@@ -68,4 +68,9 @@ function getProduct(id)
     ProductId = document.getElementById(id).value
    
    window.location.href = '/pages/Product.html?product='+ProductId
+}
+function buynow(id)
+{
+    ProductId = document.getElementById(id).value
+    window.location.href = '/pages/Order/order.html?product='+ProductId
 }

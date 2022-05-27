@@ -1,5 +1,5 @@
 const params = new URLSearchParams(window. location. search)
-tag = params.get('watch')
+tag = params.get('product')
 domain = localStorage.getItem('domain')
 getProductUrl = 'http://'+domain+'/Tag/search-product-by-tag/'+tag
 fetch(getProductUrl,{
@@ -57,7 +57,7 @@ function GetProduct(data){
                     <p class="dicount">${percent}% Discount, Buy now</p> 
                      ${shipping}          
                     <button type="button" class="cart btn">Add To Cart</button>
-                    <button type="button" class="buy btn">Buy now</button>
+                    <button type="button" class="buy btn" onclick="buynow(this.id)" id="buybtn${i}" value="${product[i].id}">Buy now</button>
                 </div>
             </div>
         </div>
@@ -68,6 +68,13 @@ function GetProduct(data){
     }
   
 }
+
+function buynow(id)
+{
+    productid = document.getElementById(id).value
+    window.location.href = '/pages/Order/order.html?product='+productid
+}
+
 
 function getProduct(id)
 {

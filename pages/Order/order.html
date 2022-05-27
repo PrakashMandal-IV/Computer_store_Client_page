@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Point</title>
+    <link rel="stylesheet" href="/Style/nav.css">
+    <link rel="stylesheet" href="/Style/order.css">
+</head>
+
+<body>
+    <nav class="navContainer" id="nav">
+        <div class="nav-bar" id="navbar">
+        </div>
+    </nav>
+    <div class="spacer"></div>
+
+    <div class="container">
+        <h2>Order</h2>
+        <div class="Main" id="productinfo">
+
+            <div class="order">
+
+            </div>
+        </div>
+        <div class="Address">
+            <h2>Address</h2>
+            <div class="addressElement">
+                <div class="address" id="address">
+
+                </div>
+                <div class="btn">
+                    <button class="addAddress" type="button" onclick="openAddressForm()">New Address</button>
+                    <div class="addressform" id="AddressForm">
+                        <div>
+                            <div class="AddAddress">
+                                <input class="Addinput" type="text" name="Name" id="name" placeholder="Name.." required>
+                            </div>
+                            <div class="AddAddress">
+                                <input class="Addinput" type="text" name="Name" id="street" placeholder="Street.." required>
+                            </div>
+                            <div class="AddAddress">
+                                <input class="Addinput" type="text" name="Name" id="city" placeholder="City" required>
+                            </div>
+                            <div class="AddAddress">
+                                <input class="Addinput" type="text" name="Name" id="state" placeholder="State" required>
+                            </div>
+                            <div class="AddAddress">
+                                <input class="Addinput" type="text" name="Name" id="country" placeholder="Country" required>
+                            </div>
+                            <div class="AddAddress">
+                                <input class="Addinput" type="text" name="Name" id="landMark" placeholder="LandMark">
+                            </div>
+                            <div class="AddAddress">
+                                <input class="Addinput" type="text" name="Name" id="pincode" placeholder="Postal Code" required>
+                            </div>
+                            <div class="AddAddress">
+                                <input class="Addinput" type="text" name="Name" id="phone" placeholder="Phone Number" required>
+                            </div>
+                            <div class="AddAddress">
+                                <input type="radio" name="HOME" id="HomeAddress" checked> 
+                                <label class="AddressType" for="HOME">Home Address</label>
+                                <input type="radio" name="OFFICE" id="OfficeAddress">
+                                <label class="AddressType" for="OFFICE">Office Address</label>
+                            </div>
+                            <div class="formbtn">
+                             <button class="submit" onclick="AddAddress()">Save</button>
+                             <button class="cancle" type="reset" onclick="CandleAddressForm()">Cancle</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="totalprice" id="price">
+
+        </div>
+        <div class="Payment">
+            <h3>Payment</h3>
+            <div class="select">
+
+                <input type="radio" name="payMethod" class="pay" id="Pay" checked>
+                <label for="payMethod">Cash on delivery </label>
+            </div>
+        </div>
+        <div class="buyNow">
+            <button class="place" type="button" onclick="placeorder()">Place Order</button>
+        </div>
+    </div>
+
+</body>
+<script src="/Script/nav.js"></script>
+<script src="/Script/order.js"></script>
+<!-- <script src="/Script/ValidationCheck.js"></script>-->
+
+</html>

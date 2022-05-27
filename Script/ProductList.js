@@ -58,7 +58,7 @@ function GetProduct(data){
                     <p class="dicount">${percent}% Discount, Buy now</p> 
                      ${shipping}          
                     <button type="button" class="cart btn">Add To Cart</button>
-                    <button type="button" class="buy btn">Buy now</button>
+                    <button type="button" class="buy btn" onclick="buynow(this.id)" id="buybtn${i}" value="${product[i].id}">Buy now</button>
                 </div>
             </div>
         </div>
@@ -75,4 +75,10 @@ function getProduct(id)
     ProductId = document.getElementById(id).value
    
    window.location.href = '/pages/Product.html?product='+ProductId
+}
+
+function buynow(id)
+{
+    ProductId = document.getElementById(id).value
+    window.location.href = '/pages/Order/order.html?product='+ProductId
 }

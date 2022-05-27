@@ -16,7 +16,7 @@ else{
        }
    }).then(function (response){
        if(response.status !=200)
-       {
+       {    
            window.location.href = "/pages/login.html"
        }
    })

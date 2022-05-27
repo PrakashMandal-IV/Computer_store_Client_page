@@ -19,13 +19,14 @@
 }
 .productclick{
     border: none;
+    background-color: white;
 }
 .card {
     display: flex;
     flex-direction: column;   
     gap: 5pt;
     width: 220pt;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(255, 255, 255);
     box-shadow: 2px 2px 4px #7c7c7c;
 }
 
