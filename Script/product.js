@@ -37,8 +37,8 @@ function getProduct(data)
         <p class="shipping">Free shipping available on items above ₹ 1000/-</p>
         <button class="fav" type="button">Add to Fav.</button>
         <div class="button">
-            <button class="btn buy" type="button">Buy Now</button>
-            <button class="btn cart" type="button">Add to Cart</button>
+            <button class="btn buy" type="button" onclick="buynow(this.id)" id="buybtn" value="${data.id}">Buy Now</button>
+            <button class="btn cart" type="button" >Add to Cart</button>
             <p class="replacement">7 days Replacement</p>
             <div class="pricing">
                 <p class="price">₹ ${data.newPrice}</p>
@@ -49,4 +49,10 @@ function getProduct(data)
 </div>
     `
     producthtml.innerHTML += product
+}
+
+function buynow(id)
+{
+    ProductId = document.getElementById(id).value
+    window.location.href = '/pages/Order/order.html?product='+ProductId
 }

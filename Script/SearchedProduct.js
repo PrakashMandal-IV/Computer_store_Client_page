@@ -72,7 +72,7 @@ function GetProduct(data){
 function buynow(id)
 {
     productid = document.getElementById(id).value
-    window.location.href = '/Orders/order.html?productid='+productid
+    window.location.href = '/pages/Order/order.html?product='+productid
 }
 
 

@@ -196,7 +196,7 @@ function placeorder() {
     orderdata = {
         productId: `${getproductId}`,
         quantity: `${qty}`,
-        paid: Orderpaid,
+        paid: Orderpaid,    
         addressId: `${AddressIdOrder}`
     }
     console.log(JSON.stringify(orderdata))
